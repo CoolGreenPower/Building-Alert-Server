@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://www.google.com"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Building</title>
+  <script src="index.js" async></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <navbar>
+    <div class="navbar-container">
+      <div class="navbar-content">
+        <div class="navbar-logo">
+          <a href="/admin/dashboard"><img src="../../favicon.ico" alt="BuildingAssure Logo"></a>
+        </div>
+        <div class="navbar-links">
+          <a href="/admin">Home</a>
+          <a href="/adminforms/createbuilding">Create Building</a>
+          <a href="/adminforms/adddevices">Add Devices/Sensors</a>
+          <a style="cursor: pointer" onclick="logout()">Logout</a>
+          <!-- <a href="/admin/createBuilding">Create Building</a>
+          <a href="/admin/createUser">Create User</a>
+          <a href="/admin/createReport">Create Report</a>
+          <a href="/admin/viewReports">View Reports</a>
+          <a href="/admin/viewBuildings">View Buildings</a>
+          <a href="/admin/viewUsers">View Users</a>
+          <a href="/admin/resetPassword">Reset Password</a>
+          <a href="/admin/logout">Logout</a> -->
+        </div>
+      </div>
+    </div>
+  </navbar>
+
+  <div id="body-container">
+    <h2 class="body-header">
+      Dashboard
+    </h2>
+    <div id="body-listing-container">
+      <a href="/admin/dashboard"><button id="go-back-button">Go Back</button></a>
+      <div id="body-listing-list">
+
+      </div>
+      <div id="body-listing-details">
+        <div id="listing-sidebar">
+          <button onclick="populateListing()">Details</button>
+          <button >Devices</button>
+          <button>Assets</button>
+          <button>Suites</button>
+        </div>
+
+        <!-- <div id="listing-form" class="listing-section">
+          <h2>Building Details</h2>
+          <form id="body-listing-details_form"></form>
+        </div> -->
+        <div id="listing-details" class="listing-section-details">
+          <!-- <h1>YESssssssssssssssssssss</h1>
+          <h1>YESssssssssssssssssssss</h1>
+          <h1>YESssssssssssssssssssss</h1>
+          <h1>YESssssssssssssssssssss</h1>
+          <h1>YESssssssssssssssssssss</h1>
+          <h1>YESssssssssssssssssssss</h1>
+          <h1>YESssssssssssssssssssss</h1>
+          <h1>YESssssssssssssssssssss</h1>
+          <h1>YESssssssssssssssssssss</h1>
+          <h1>YESssssssssssssssssssss</h1>
+          <h1>YESssssssssssssssssssss</h1>
+          <h1>YESssssssssssssssssssss</h1>
+          <h1>YESssssssssssssssssssss</h1>
+          <h1>YESssssssssssssssssssss</h1>
+          <h1>YESssssssssssssssssssss</h1>
+          <h1>YESssssssssssssssssssss</h1> -->
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <h2>BuildingAssure Footer</h2>
+      </div>
+    </div>
+  </footer>
+  
+
+  
+</body>
+</html>

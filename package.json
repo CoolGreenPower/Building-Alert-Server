@@ -1,0 +1,56 @@
+{
+  "name": "cgp-app-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@azure/storage-blob": "^12.14.0",
+    "ambient-weather-api": "^0.0.6",
+    "apidoc": "^1.0.3",
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cli-progress": "^3.12.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.9",
+    "envalid": "^7.1.0",
+    "eventsource": "^1.1.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.4.0",
+    "express-validator": "^6.12.0",
+    "express-ws": "^5.0.2",
+    "jsonwebtoken": "^9.0.1",
+    "log4js": "^6.3.0",
+    "mongoose": "^7.3.3",
+    "mongoose-dummy": "^1.0.8",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.3",
+    "ramda": "^0.29.0",
+    "request-promise": "^4.2.6",
+    "socket.io-client": "^4.6.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3",
+    "websocket": "^1.0.34",
+    "ws": "^8.13.0",
+    "xml-js": "^1.6.11"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoolGreenPower/cgp-app-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoolGreenPower/cgp-app-server/issues"
+  },
+  "homepage": "https://github.com/CoolGreenPower/cgp-app-server#readme",
+  "devDependencies": {
+    "jsdoc": "^4.0.2"
+  }
+}

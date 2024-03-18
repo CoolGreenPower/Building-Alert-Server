@@ -1,0 +1,9 @@
+:root {
+    --background-color: #26262b;
+    --text-color: #fff;
+    --font-size: 16px;
+    --font-family: 'Poppins', sans-serif;
+    --general-button-color: rgb(74, 74, 173);
+    --general-button-hover-color: rgb(102, 52, 145);
+    --submit-button-color: #4CAF50;
+}

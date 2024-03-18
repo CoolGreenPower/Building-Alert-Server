@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Devices</title>
+  <script src="index.js" async></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <navbar>
+    <div class="navbar-container">
+      <div class="navbar-content">
+        <div class="navbar-logo">
+          <a href="/admin/dashboard"><img src="../../favicon.ico" alt="BuildingAssure Logo"></a>
+        </div>
+        <div class="navbar-links">
+          <a href="/admin">Home</a>
+          <a href="/adminforms/createbuilding">Create Building</a>
+          <a href="/adminforms/adddevices">Add Devices/Sensors</a>
+          <a style="cursor: pointer" onclick="logout()">Logout</a>
+          <!-- <a href="/admin/createBuilding">Create Building</a>
+          <a href="/admin/createUser">Create User</a>
+          <a href="/admin/createReport">Create Report</a>
+          <a href="/admin/viewReports">View Reports</a>
+          <a href="/admin/viewBuildings">View Buildings</a>
+          <a href="/admin/viewUsers">View Users</a>
+          <a href="/admin/resetPassword">Reset Password</a>
+          <a href="/admin/logout">Logout</a> -->
+        </div>
+      </div>
+    </div>
+  </navbar>
+
+  <div class="control-buttons">
+    <h1>Add Devices</h1>
+    <button class="header-button submit-button" type="submit" form="create-devices-form">Generate JSON</button>
+    <!-- <button class="header-button submit-button database-insert-button" type="button">Submit to Database</button> -->
+  </div>
+  <div id="load-building-container">
+    <input type="text" id="building-id-input" placeholder="Building ID">
+    <button id="load-building-button" onclick="loadBuilding()">Load Building</button>
+  </div>
+  <div class="container">
+    <div class="creation">
+        <!-- <button id="create-form-button">Generate Form</button> -->
+        <form id="create-devices-form">
+        </form>
+    </div>
+    <div id="code-review-container">
+        <!-- <pre class="code-review">
+        </pre>
+        <textarea class="code-input" id="code-review-input"></textarea> -->
+
+
+        
+    </div>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <h2>BuildingAssure Footer</h2>
+      </div>
+    </div>
+  </footer>
+  
+
+  
+</body>
+</html>

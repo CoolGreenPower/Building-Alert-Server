@@ -1,0 +1,8 @@
+{
+    "name": "CoolGreenPower API",
+    "version": "0.1.0",
+    "description": "CGP/Building Assure API for basic pro. Not all availabe fields are displayed for different data types within the routes. Refer to Types for the full schemas of each of the types.",
+    "title": "CGP API",
+    "url": "https://buildingassure.azurewebsites.net"
+
+  }

@@ -1,0 +1,256 @@
+@import url("../globals.css");
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  margin: 0;
+  /* padding: 20px; */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
+pre {
+  background: #17171c;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: white;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
+.add-entry-button {
+  width: clamp(10rem, 18vw, 20rem);
+  margin: 1rem 2rem 2rem 1rem;
+  background-color: rgb(74, 74, 173);
+}
+
+.remove-entry-button {
+  width: clamp(8rem, 10vw, 15rem);
+  margin-bottom: 2rem;
+  background-color: rgb(200, 74, 74);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+textarea {
+  background: #17171c;
+  border: 1px solid #ddd;
+  border-left: 3px solid #4eeded;
+  color: white;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navbar-container {
+  width: 100%;
+}
+.navbar-content {
+  display: flex;
+  margin: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: clamp(20rem, 40vw, 40rem);
+}
+
+.control-buttons {
+  display: flex;
+  margin: 0.5rem;
+  justify-content: space-around;
+  height: 3.5rem;
+}
+.header-button {
+  width: clamp(10rem, 20vw, 20rem);
+}
+
+fieldset {
+  border: none;
+  border-bottom: 1px solid #ccc;
+} 
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 2rem;
+}
+
+h2 {
+  color: rgb(132, 216, 132);
+}
+
+.creation {
+  /* margin: 2rem 2rem; */
+  padding: 2rem;
+  display: block;
+  width: 50%;
+  overflow-y: scroll;
+  height: 90vh;
+  border: 1px solid #ccc;
+}
+
+.expand-button {
+  width: clamp(6rem, 8vw, 15rem);
+  height: 2.5rem;
+  margin: 1rem 2rem 2rem 1rem;
+  background-color: rgb(74, 74, 173);
+}
+
+.footer-container {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer-container {
+  font-weight: bold;
+}
+
+#code-review-container {
+  /* margin: 2rem 2rem; */
+  padding: 2rem;
+  display: block;
+  width: 50%;
+  overflow-y: scroll;
+  height: 90vh;
+  border: 1px solid #ccc;
+}
+
+#createBuildingForm {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* .codeInput {
+  height: 30em;
+  width: 35em;
+} */
+
+.building-form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.building-form-input {
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#load-building-container {
+  margin: 2rem;
+}
+#building-id-input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+#load-building-button {
+  width: 50%;
+}
+
+.code-review-section {
+  margin-bottom: 2rem;
+}
+
+.code-response {
+  border-left: 3px solid #1fdb67;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+}
+
+/* input[type="text"],
+input[type="number"] {
+  
+} */
+
+button {
+  background-color: rgb(74, 74, 173);
+  font-size: 16px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: rgb(102, 52, 145);
+}
+
+@media screen and (max-width: 768px) {
+  .control-buttons {
+    display: none;
+  }
+  body {
+    overflow: auto;
+  }
+  .container {
+      flex-direction: column;
+      margin: 1rem;
+  }
+  .creation {
+      padding: 0;
+      margin: 0;
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      width: 100%;
+      /* overflow-y: scroll; */
+      height: auto;
+      border: none;
+  }
+  #code-review-container {
+      padding: 0;
+      margin: 0;
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      width: 100%;
+      /* overflow-y: scroll; */
+      height: auto;
+      border: none;
+  }
+  /* .codeInput {
+    height: 30em;
+    width: 30em;
+  } */
+  
+}
