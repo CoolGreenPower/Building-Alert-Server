@@ -1,4 +1,4 @@
-# BasicPro backend
+# BasicPro backend (Deprecated)
 Handles server routing, requests, etc. 
 
 ## Important
